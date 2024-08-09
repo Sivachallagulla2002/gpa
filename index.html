@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPA & CGPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>GPA & CGPA Calculator</h1>
+
+        <!-- GPA Calculator -->
+        <h2>GPA Calculator</h2>
+        <form id="gpa-form">
+            <div id="courses">
+                <div class="course">
+                    <label>Subject 1:</label>
+                    <input type="number" placeholder="Credits" class="credits" min="0">
+                    <input type="number" placeholder="Points" class="points" min="0">
+                </div>
+            </div>
+            <button type="button" id="add-course">Add Subject
+
+            </button>
+            <button type="button" id="calculate-gpa">Calculate GPA</button>
+        </form>
+        <div id="gpa-result">
+            <h3>Your GPA is: <span id="gpa"></span></h3>
+        </div>
+
+        <!-- CGPA Calculator -->
+         
+        <h2>CGPA Calculator</h2>
+        <form id="cgpaForm">
+            <div id="semesters">
+                <div class="semester">
+                    <label for="semester1">Semester 1 GPA:</label>
+                    <input type="number" id="semester1" step="0.01" min="0" max="10" required>
+                </div>
+            </div>
+            <button type="button" id="add-semester">Add Another Semester</button>
+            <button type="button" id="calculate-cgpa">Calculate CGPA</button>
+        </form>
+        <div id="cgpa-result">
+            <h3>Your CGPA is: <span id="cgpa"></span></h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
